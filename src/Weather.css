@@ -1,3 +1,50 @@
 .Weather {
   border: 1.5px solid black;
+  border-radius: 4px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 16px;
+}
+
+.Weather h1 {
+  color: #c9356c;
+  margin: 20px 0 0 0;
+  line-height: 30px;
+  font-size: 30px;
+  font-weight: 250;
+}
+
+.Weather ul {
+  margin: 0;
+  padding: 0;
+}
+
+.Weather li {
+  color: #9ba6a5;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 100;
+  list-style: none;
+}
+
+.Weather .temp {
+  color: #c9356c;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 64px;
+  margin-left: 55px;
+}
+
+.Weather .units {
+  font-size: 16px;
+  font-weight: bold;
+  color: #9ba6a5;
+  position: relative;
+  top: -36px;
+  margin-left: 4px;
+}
+
+.Weather img {
+  height: 64px;
+  margin-right: 10px;
+  display: inline-block;
 }
