@@ -2,12 +2,12 @@ import React from "react";
 import Weather from "./Weather";
 import "./App.css";
 
-export default function App() {
+export default function App(props) {
   return (
     <div className="App">
       <div className="container">
         <h1> Weather App</h1>
-        <Weather />
+        <Weather defaultCity="Tokyo" />
         <footer>
           This project was created by{" "}
           <a
