@@ -8,7 +8,7 @@ export default function TempConversion(props) {
     event.preventDefault();
     setUnits("fahrenheit");
   }
-  function showCelsius(event) {
+  function convertToCelsius(event) {
     event.preventDefault();
     setUnits("Celsius");
   }
@@ -31,7 +31,7 @@ export default function TempConversion(props) {
       <div className="WeatherTemp">
         <span className="temp">{Math.round(fahrenheit)}</span>
         <span className="units">
-          <a href="/" onClick={showCelsius}>
+          <a href="/" onClick={convertToCelsius}>
             °C
           </a>{" "}
           | °F
