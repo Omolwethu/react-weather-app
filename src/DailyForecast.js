@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Puff } from "react-loader-spinner";
 import "./DailyForecast.css";
 import DailyForecastDay from "./DailyForecastDay";
 
@@ -45,6 +46,17 @@ export default function DailyForecast(props) {
     );
   } else {
     loadData();
-    return "Please wait...";
+    return (
+      <Puff
+        visible={true}
+        height="60"
+        width="60"
+        color="#9ba6a5"
+        ariaLabel="puff-loading"
+        radius="2"
+        wrapperStyle={{}}
+        wrapperClass=""
+      />
+    );
   }
 }
