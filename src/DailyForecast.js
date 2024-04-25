@@ -29,6 +29,7 @@ export default function DailyForecast(props) {
                 </div>
               );
             }
+            return <></>;
           })}
         </div>
       </div>
